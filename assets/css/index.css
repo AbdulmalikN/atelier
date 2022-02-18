@@ -1,0 +1,488 @@
+@font-face {
+  font-family: OldStandard;
+  src: url(../fonts/OldStandard.ttf);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aqua;
+}
+
+#root {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #181511;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 14px 115px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-part > a {
+  font-family: OldStandard;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffae2b;
+  margin-right: 42px;
+}
+
+.navigation-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-text > a {
+  font-family: OldStandard;
+  font-size: 11px;
+  line-height: 24px;
+  color: #aca592;
+  margin-right: 28px;
+}
+
+.navigation-text > :nth-child(5) {
+  margin-right: 0;
+}
+
+.navigation-text > a:hover {
+  color: #ffae2b;
+}
+
+.right-side {
+  width: 147px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid #ffae2b;
+  transition: all 0.5s ease;
+}
+
+.buy-t {
+  font-family: OldStandard;
+  font-size: 11px;
+  line-height: 22px;
+  color: #ffae2b;
+}
+
+.right-side:hover {
+  background: #ffae2b;
+}
+
+.right-side:hover .buy-t {
+  color: #181511;
+}
+
+.content-header {
+  width: 100%;
+  padding: 120px 285px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../all-images/image-01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-header > :nth-child(1) {
+  font-family: OldStandard;
+  font-size: 12px;
+  line-height: 22px;
+  color: #ffae2b;
+}
+
+.content-header > :nth-child(2) {
+  padding: 15px 0 35px;
+  font-family: OldStandard;
+  font-size: 70px;
+  line-height: 80px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.for-layout {
+  width: 143px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffae2b;
+}
+.for-layout > a {
+  font-family: OldStandard;
+  font-size: 11px;
+  line-height: 22px;
+  color: #181511;
+}
+
+#section {
+  width: 100%;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sameText {
+  font-family: OldStandard;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aca592;
+}
+
+.sameBigText {
+  font-family: OldStandard;
+  padding: 10px 0 60px;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  color: #ffae2b;
+}
+
+.productHolder {
+  width: 100%;
+  /* height: 2489px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 377px;
+  height: 305px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  border: 1px solid #4b4136;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.imageText {
+  font-family: OldStandard;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.image-footer {
+  width: 100%;
+  height: 462px;
+  background-image: url(../all-images/IMAGE-23.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#designCard {
+  width: 100%;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card2 {
+  width: 380px;
+  height: 330px;
+  padding: 61px 117px 76px 61px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #4b4136;
+  transition: all 0.5s ease;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+}
+
+.card2 > :nth-child(2) {
+  width: 100%;
+  padding: 20px 0 10px;
+  font-family: OldStandard;
+  font-size: 28px;
+  line-height: 40px;
+  color: #ffae2b;
+}
+
+.card2 > :nth-child(3) {
+  width: 100%;
+  font-family: OldStandard;
+  font-size: 15px;
+  line-height: 26px;
+  color: #aca592;
+}
+
+.card2 > :nth-child(4) {
+  width: 100%;
+  padding-top: 5px;
+  font-family: OldStandard;
+  font-size: 11px;
+  line-height: 26px;
+  color: #aca592;
+}
+
+.containerHolder {
+  width: 100%;
+  padding: 50px 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoRow {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #4b4136;
+}
+
+.forImages {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentImg {
+  width: 217px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contentImg > :nth-child(2) {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -13%;
+  transition: all 1s ease;
+}
+
+.contentImg:hover :nth-child(2) {
+  top: 10%;
+}
+
+.contentImg:hover .iconIns {
+  top: 10%;
+  width: 200px;
+  height: 200px;
+  /* transform: translate(-50%); */
+}
+
+#footer {
+  width: 100%;
+  padding: 120px 120px 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topMainPart {
+  width: 100%;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #4b4136;
+}
+
+.topMainPart > :nth-child(1) {
+  padding: 0 341px 20px 341px;
+}
+
+.sameText2 {
+  font-family: OldStandard;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  color: #aca592;
+}
+
+.forBTNS {
+  width: 100%;
+  padding: 0 390px;
+  margin: 82px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe {
+  width: 100%;
+  height: 60px;
+  background: #181511;
+  border: 1px solid #4b4136;
+  font-family: OldStandard;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffae2b;
+  transition: all 0.5s ease;
+}
+
+.subscribe:hover {
+  background: #ffae2b;
+  color: #181511;
+  border: none;
+}
+
+.bottomBtn {
+  padding-top: 35px;
+  font-family: OldStandard;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #aca592;
+}
+
+.goldenText {
+  color: #ffae2b;
+}
+
+.browsersApp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.browsersApp > a {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #4b4136;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  transition: all 0.5s ease;
+}
+
+.browsersApp > a:hover {
+  background: #ffae2b;
+}
+
+.browsersApp > a:hover .imageLink {
+  filter: invert(4%) sepia(31%) saturate(596%) hue-rotate(356deg) brightness(0%)
+    contrast(100%);
+}
+
+.bottomPartFooter {
+  width: 100%;
+  padding: 21px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomPartFooter > :nth-child(1) {
+  font-family: OldStandard;
+  font-size: 12px;
+  line-height: 22px;
+  color: #aca592;
+}
+
+.golden {
+  font-family: OldStandard;
+  font-size: 12px;
+  line-height: 30px;
+  color: #ffae2b;
+}
+
+.goldenLine {
+  color: #4b4136;
+}
